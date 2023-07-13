@@ -23,6 +23,11 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModBlocks.RANDOM_BLOCK.get());
                         pOutput.accept(ModBlocks.RANDOM_ORE.get());
+                        pOutput.accept(ModBlocks.RANDOM_PLANKS.get());
+                        pOutput.accept(ModBlocks.RANDOM_LEAVES.get());
+                        pOutput.accept(ModBlocks.RANDOM_LOG.get());
+                        pOutput.accept(ModBlocks.RANDOM_SAPLING.get());
+
                     })
 
                     .build());
