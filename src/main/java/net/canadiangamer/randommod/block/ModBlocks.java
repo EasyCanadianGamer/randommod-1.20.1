@@ -5,6 +5,7 @@ import net.canadiangamer.randommod.block.custom.ModFlammableRotatedPillarBlock;
 import net.canadiangamer.randommod.item.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.BlockGetter;
@@ -28,7 +29,9 @@ public class ModBlocks {
             })));
 
     public static final RegistryObject<Block> RANDOM_ORE = registerBlock("random_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).sound(SoundType.STONE)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(7, 10)));
+
 
     public static final RegistryObject<Block> RANDOM_LOG = registerBlock("random_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)
