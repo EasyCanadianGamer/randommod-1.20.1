@@ -16,17 +16,22 @@ public class ModCreativeModTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, RandomMod.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> RANDOM_TAB = CREATIVE_MODE_TABS.register("random_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.RANDOM_INGOT.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.RANDOMITE_INGOT.get()))
                     .title(Component.translatable("creativetab.random_tab"))
                     .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(ModItems.RANDOM_INGOT.get());
+                        pOutput.accept(ModItems.RANDOMITE_INGOT.get());
+                        pOutput.accept(ModItems.RANDOM_MEAT_COOKED.get());
+                        pOutput.accept(ModItems.RANDOM_MEAT_RAW.get());
 
-                        pOutput.accept(ModBlocks.RANDOM_BLOCK.get());
-                        pOutput.accept(ModBlocks.RANDOM_ORE.get());
+                        pOutput.accept(ModBlocks.RANDOMITE_BLOCK.get());
+                        pOutput.accept(ModBlocks.RANDOMITE_ORE.get());
                         pOutput.accept(ModBlocks.RANDOM_PLANKS.get());
                         pOutput.accept(ModBlocks.RANDOM_LEAVES.get());
                         pOutput.accept(ModBlocks.RANDOM_LOG.get());
                         pOutput.accept(ModBlocks.RANDOM_SAPLING.get());
+                        pOutput.accept(ModBlocks.DEEPSLATE_RANDOMITE_ORE.get());
+
+
 
                     })
 

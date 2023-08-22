@@ -19,8 +19,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
 
-        blockWitItem(ModBlocks.RANDOM_BLOCK);
-        blockWitItem(ModBlocks.RANDOM_ORE   );
+        blockWitItem(ModBlocks.RANDOMITE_BLOCK);
+        blockWitItem(ModBlocks.RANDOMITE_ORE);
+        blockWitItem(ModBlocks.DEEPSLATE_RANDOMITE_ORE);
 
 
 

@@ -1,7 +1,8 @@
 {
   "values": [
     "randommod:random_block",
-    "randommod:random_ore"
+    "randommod:random_ore",
+    "randommod:deepslate_randomite_ore"
 
   ]
 }

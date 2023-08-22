@@ -23,12 +23,16 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, RandomMod.MOD_ID);
 
-    public static final RegistryObject<Block> RANDOM_BLOCK = registerBlock("random_block",
+    public static final RegistryObject<Block> RANDOMITE_BLOCK = registerBlock("randomite_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.METAL).lightLevel((p_50874_) -> {
                 return 15;
             })));
 
-    public static final RegistryObject<Block> RANDOM_ORE = registerBlock("random_ore",
+    public static final RegistryObject<Block> RANDOMITE_ORE = registerBlock("randomite_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(7, 10)));
+
+    public static final RegistryObject<Block> DEEPSLATE_RANDOMITE_ORE = registerBlock("deepslate_randomite_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(7, 10)));
 

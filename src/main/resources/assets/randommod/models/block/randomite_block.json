@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "randommod:block/random_ore"
+    "all": "randommod:block/randomite_block"
   }
 }

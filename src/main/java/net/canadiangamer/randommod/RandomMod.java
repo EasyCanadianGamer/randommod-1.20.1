@@ -44,7 +44,7 @@ public class RandomMod {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.RANDOM_INGOT);
+            event.accept(ModItems.RANDOMITE_INGOT);
         }
 
     }
